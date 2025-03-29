@@ -31,7 +31,6 @@ jobs:
           mv "./build/libs/$FILE_NAME" "./build/libs/$NEW_NAME"
           echo "artifact_name=$NEW_NAME" >> "$GITHUB_OUTPUT"
           echo "artifact_path=./build/libs/$NEW_NAME" >> "$GITHUB_OUTPUT"
-
       - name: GitHub Action Artifact
         uses: actions/upload-artifact@v4
         with:
